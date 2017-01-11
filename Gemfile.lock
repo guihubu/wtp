@@ -40,6 +40,8 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     bcrypt (3.1.11)
+    bootstrap-sass (3.1.0.0)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -57,6 +59,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.10)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
@@ -167,9 +170,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass (= 3.1.0)
   byebug
   coffee-rails (~> 4.2)
   devise
+  devise-bootstrap-views
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
