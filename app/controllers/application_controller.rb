@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user_account!
 
   def index
-  	render :index
+    render :index
+  end
+
+  def login
+    redirect_to :root
   end
 end
