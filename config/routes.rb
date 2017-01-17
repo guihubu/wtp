@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   root to: "application#index"
 
   get :index, :to => 'application#index'
+
+  scope :user do
+  	get 'list', :to => 'user#list', :alias => :user_list
+  	get 'profile', :to => 'user#profile', :alias => :user_profile
+  end
 end
